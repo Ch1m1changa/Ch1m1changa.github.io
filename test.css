@@ -1,0 +1,115 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:  'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.column {
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.block {
+  padding:0 3rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 2rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+.section.background-dark {
+  background: #282828;
+  color: #fff;
+}
+.section.full-bleed {
+  padding:0;
+}
+
+/* things that depend on primary content column size */
+h1, h2, h3, p, .img-column, ul, ol, blockquote, .grid.txt-column, hr.txt-column, hr.ellipses, hr.small, pre.txt-column {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* TYPE */
+p {
+  font-size:2rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+ul, ol {
+  padding: 0 0 0 2rem;
+  margin-bottom: 2rem;
+}
+li {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+li ul {
+  margin-top: 1rem;
+}
+
+p.lede {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Style the header */
+header {
+    background-color: tomato;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  background-color: orange;
+  font-size:2.9rem;
+  line-height: 4rem;
+  margin-top: 4rem;
+}
+
+h3 {
+  font-size:2.2rem;
+  line-height: 3rem;
+  margin-top: 4rem;
+}
+
+/* Style the footer */
+footer {
+    background-color: tomato;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
